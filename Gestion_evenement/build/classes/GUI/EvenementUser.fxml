@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="726.0" prefWidth="1169.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EvenementUserController">
+   <children>
+      <TableView fx:id="tabev" layoutX="108.0" layoutY="87.0" onMouseClicked="#SetValue" prefHeight="176.0" prefWidth="843.0">
+         <columns>
+            <TableColumn fx:id="nomev" prefWidth="111.0" text="nom Evenement" />
+            <TableColumn fx:id="datedev" prefWidth="98.0" text="date debut" />
+            <TableColumn fx:id="datefev" prefWidth="109.0" text="date fin" />
+            <TableColumn fx:id="lieuev" prefWidth="118.0" text="lieu evenement" />
+            <TableColumn fx:id="typesev" prefWidth="92.0" text="type sport" />
+            <TableColumn fx:id="typeev" prefWidth="210.0" text="type evenement" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_retour_menu" layoutX="1022.0" layoutY="672.0" mnemonicParsing="false" onAction="#retouraumenu" text="Retour au Menu" />
+      <Pane layoutX="3.0" layoutY="-1.0" prefHeight="726.0" prefWidth="1169.0" />
+   </children>
+</AnchorPane>
